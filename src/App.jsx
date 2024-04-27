@@ -26,7 +26,7 @@ function App() {
   const BackgroundImage = "https://images.pexels.com/photos/6770775/pexels-photo-6770775.jpeg"
   return (
     <div className='flex'>
-      <div className='w-1/2'>
+      <div className='hidden md:w-1/2 md:block'>
         <img src="https://images.pexels.com/photos/7708806/pexels-photo-7708806.jpeg" alt="" className="w-full h-screen object-cover" />
 
         <div className="w-1/2 max-w-full p-5 absolute inset-0 flex flex-col justify-center items-center text-center backdrop-blur-sm bg-black/30">
@@ -35,7 +35,7 @@ function App() {
         </div>
       </div>
       <div
-        className="w-1/2 h-screen flex flex-wrap justify-end items-center bg-cover bg-no-repeat "
+        className="w-full md:w-1/2 h-screen flex flex-wrap justify-end items-center bg-cover bg-no-repeat "
         style={{
           backgroundImage: `url('${BackgroundImage}')`,
         }}
